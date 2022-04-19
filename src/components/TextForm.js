@@ -21,7 +21,7 @@ export default function TextForm(props) {
     var text = document.getElementById("myBox");
     text.select();
     navigator.clipboard.writeText(text.value);
-    props.showAlert("Copy the Text!","success");
+    props.showAlert("Copied to Clipboard","success");
   }
   const handleExtraSpaces = () => {
    var newText = text.split(/[ ]+/);
