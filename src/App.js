@@ -15,8 +15,11 @@ function App() {
       msg:message,
       typ:type,
     })
-
+    setTimeout(() => {
+      setAlert(null);
+    }, 3000);
   }
+  
   const toggleMode = () =>{
     if(mode==='light'){
       setMode('dark');
