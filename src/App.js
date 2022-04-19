@@ -17,13 +17,13 @@ function App() {
     })
     setTimeout(() => {
       setAlert(null);
-    }, 3000);
+    }, 1500);
   }
-  
+
   const toggleMode = () =>{
     if(mode==='light'){
       setMode('dark');
-      document.body.style.backgroundColor= '#06113C';
+      document.body.style.backgroundColor= '#151D3B';
       showAlert("Dark mode is enable","success");
     }
     else{
